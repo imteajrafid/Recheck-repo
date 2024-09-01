@@ -22,8 +22,24 @@ body {
 .container{
     max-width: 1024px;
     margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+.btn{
+    padding: 8px 25px;
+    border-radius: 50px;
+    border: none; 
+    color: white;
+}
+.btn-primary{
+             background-color: #E6533C;
+}
+.btn-secondry{
+    background-color: transparent;
+    border: 1px solid white;
+    color: azure;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -55,3 +71,262 @@ nav ul li.active{
     background-color: #E6533C;
     border-radius: 50px;
 }
+
+nav .menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 425px){
+    nav .menu-icon {
+        display: inline;
+    }
+
+    nav ul{
+        display: none;
+    }
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: auto;
+    max-width: 1024px;
+}
+
+.banner-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.banner-content h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.banner-content p{
+    font: 10px;
+    color: gray;
+}
+
+.button-container{
+    display: flex;
+    gap: 10px;
+}
+
+.logo{
+    color: #E6533C;
+    font-weight: 900;
+    font-size: larger;}
+
+.banner-image{
+    width: max-content;
+    position: relative;
+}
+
+    .banner-image img
+    {
+        height: 500px;
+    }
+
+    .banner-image-container{
+        display: flex;
+        justify-content: end;
+    }
+
+    @media screen and (max-width: 425px) {
+        .banner{
+            display: grid;
+            grid-template-columns:1fr ;
+            gap: 20px;
+        }
+
+        .banner-content h1{
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .banner-content p {
+            font-size: 12px;
+            color: rgb(91, 91, 91);
+        }
+        .banner-image-container{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .floating-card{
+        position: absolute;
+        background: #4c4c4c94;
+        backdrop-filter: blur(2px);
+    }
+    .floating-card-top{
+        top: 25%;
+        right: -10%;
+    }
+
+    .training{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+     .title{
+        color: #494949;
+        font-size: 11px;
+    }
+
+    .top-row{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1.2fr;
+    }
+    .bottom-row{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1.5fr;
+    }
+
+.crd{
+    position: relative;
+}
+    .crd img{
+       width: 100%;
+       height: 200px;
+       object-fit: cover;
+    }
+
+   
+
+    .overlay-1{
+     position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        font-size: 12px;
+        font-weight: bold;
+        flex-direction: column;
+        background: #00947c60;
+        color: black;
+        justify-content: end;
+        padding: 20px;
+      
+    }
+
+    .bmi{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .bmi-main-container{
+         background: rgb(121, 117, 117);
+        
+    }
+
+    .bmi-container{
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        gap: 20px;
+        margin-top: 50px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: 20px;
+        
+    }
+
+    @media screen and (max-width: 425px) {
+       .bmi-container
+       
+       {grid-template-columns: 1fr;}
+    }
+
+    .bmi-container table {
+        border: 1px solid gray;
+        border-collapse: collapse;
+        margin-top: 30px;
+    }
+
+    .bmi-container table th, .bmi-container table td{
+        text-align: left;
+        border: 1px solid gray;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .bmi-container table td{
+      color: #5d5d5d;
+      font-size: 12px;
+    }
+
+    .calculator form{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr) ;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .calculator form .span-2{
+        grid-column: span 2;
+    }
+
+    input, select{
+        padding: 7px 15px;
+        border: none;
+        background-color: #282828;
+        color: white;
+        width: 100%;
+    }
+
+    .btn-primary{
+        border-radius: 50px;
+    }
+
+    footer{
+        background-color: #282828;
+    }
+    
+    footer .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #5d5d5d;
+    }
+
+    .footer-content h1{
+        color: #E6533C;
+    }
+    
+   .footer-content p{
+    color: #403c3b;
+    font-size: 12px;
+   }
+
+
+   .footer-links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+   }
+
+   .footer-links ul{
+    list-style-type: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #494949;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+
+    .last{
+        padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+   color: #5d5d5d;
+
+   }
